@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --clr-fg1: #000;
+  --max-width: 1000px;
+}
+
+body {
+  background-color: #f9ea8f;
+  background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
+  height: 100vh;
+  color: var(--clr-fg1);
+  font-family: "SF Pro", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+/* SITE LAYOUT */
+.columnContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.userPhoto {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  border: 3px solid var(--clr-fg1);
+  flex: 0 1 auto;
+  margin-top: 25px;
+}
+.userName {
+  flex: 0 0 auto;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userNameText {
+  font-size: 1rem;
+}
+.userNameBio {
+  font-size: 0.9rem;
+  padding-top: 1px;
+  font-style: italic;
+}
+.linksBox {
+  margin: 0 auto;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: 550px;
+  align-items: center;
+}
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+/* .link {
+  width: 100%;
+  flex: 0 1 auto;
+  text-align: center;
+  padding: 20px 0;
+  margin: 10px auto;
+  border: 2px solid var(--clr-fg1);
+  border-radius: 50px;
+  font-size: 1.1em;
+} */
+.link {
+  width: 100%;
+  flex: 0 1 auto;
+  text-align: center;
+  padding: 12px 0;
+  margin: 10px auto;
+  border: 2px solid black;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 15px;
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 1) 8px 8px 0px;
+}
+
+a,
+a:active,
+a:visited,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.socialsContainer {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 16px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.social {
+  width: 25px;
+  height: 25px;
+  padding: 8px;
+}
+
+.footer {
+  flex: 0 0 40px;
+  margin-top: 16px;
+}
+
+@media (max-width: 480px) {
+  .socialsContainer {
+    display: none;
+  }
+}
