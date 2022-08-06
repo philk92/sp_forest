@@ -114,7 +114,8 @@ a:hover {
 }
 
 @media (max-width: 480px) {
-  .socialsContainer {
+  .socialsContainer,
+  form {
     display: none;
   }
 }
