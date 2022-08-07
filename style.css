@@ -143,6 +143,7 @@ a:hover {
 
 .input::placeholder {
   color: #000;
+  opacity: 1;
 }
 
 .formcontainer {
